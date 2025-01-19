@@ -1,0 +1,40 @@
+# Function to generate permutations of the string
+def permute(s, prefix):
+    if len(s) == 0:
+        print(prefix)
+    else:
+        for i in range(len(s)):
+            rem = s[:i] + s[i+1:]
+            permute(rem, prefix + s[i])
+    
+
+# Driver code
+str_input = "123456"
+permute(str_input, "")
+
+#********************************   Find count of permutation    *****************************
+
+
+from math import factorial
+
+# Function to calculate the number of permutations
+def count_permutations(s):
+    # Count the frequency of each character in the string
+    freq = {}
+    for char in s:
+        if char in freq:
+            freq[char] += 1
+        else:
+            freq[char] = 1
+    
+    total_permutations = factorial(len(s))
+    
+    for count in freq.values():
+        total_permutations //= factorial(count)
+    
+    return total_permutations
+
+# Driver code
+str_input = "123456"
+result = count_permutations(str_input)
+print(f"The number of unique permutations is: {result}")

@@ -1,0 +1,26 @@
+import random
+
+# Generate a random integer between 1 and 100
+random_int = random.randint(1, 100)
+print(f"Random integer between 1 and 100: {random_int}")
+
+# Generate a random floating-point number between 0 and 1
+random_float = random.random()
+print(f"Random float between 0 and 1: {random_float}")
+
+# Choose a random element from a list
+my_list = ['apple', 'banana', 'cherry', 'date']
+random_choice = random.choice(my_list)
+print(f"Random choice from the list: {random_choice}")
+
+# Shuffle the elements of a list randomly
+random.shuffle(my_list)
+print(f"Shuffled list: {my_list}")
+
+# Generate a random floating-point number within a specified range (e.g., between 10 and 50)
+random_uniform = random.uniform(10, 50)
+print(f"Random float between 10 and 50: {random_uniform}")
+
+# Generate a random number from a Gaussian distribution
+random_gaussian = random.gauss(0, 1)  # mean = 0, standard deviation = 1
+print(f"Random number from a Gaussian distribution: {random_gaussian}")

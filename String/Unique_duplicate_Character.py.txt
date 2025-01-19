@@ -1,0 +1,23 @@
+# Input string
+s = "MtAdaabbcc"
+
+# Input string
+s = "MtAdaabbcc"
+
+
+s = s.lower()
+
+# Create a dictionary to store the frequency of each character
+char_count = {}
+
+# Count the occurrences of each character in the string
+for char in s:
+    if char in char_count:
+        char_count[char] += 1
+    else:
+        char_count[char] = 1
+
+# Print characters that appear only once (unique characters)
+for char, count in char_count.items():
+    if count == 1:
+        print(char, end="")

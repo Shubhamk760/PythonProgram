@@ -1,0 +1,9 @@
+
+b = "bjsjcskn bcb ihsih uhvuv"
+
+str_list = b.split()
+
+
+count = len(str_list)
+
+print(count)

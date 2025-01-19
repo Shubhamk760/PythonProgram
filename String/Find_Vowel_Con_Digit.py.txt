@@ -1,0 +1,21 @@
+# Input string
+str = "IOACoding Standard 1234"
+
+# Create a set to store unique vowels
+vowels_set = set()
+consnant_set = set()
+digit_set = set()
+
+# Iterate through each character in the string
+for ch in str.lower():
+    if ch in 'aeiou':
+        vowels_set.add(ch)
+    elif ch.isalpha():
+        consnant_set.add(ch)
+    elif ch.isdigit():
+        digit_set.add(ch)
+
+# Print the set of vowels
+print(vowels_set)
+print(consnant_set)
+print(digit_set)

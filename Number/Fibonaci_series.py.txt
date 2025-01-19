@@ -1,0 +1,12 @@
+def fibonacci_series(n):
+    n1, n2 = 0, 1
+    
+    for i in range(n + 1):
+        print(n1, end=" ")
+        n3 = n1 + n2
+        n1 = n2
+        n2 = n3
+
+# Taking input from the user
+n = int(input("Enter number: "))
+fibonacci_series(n)

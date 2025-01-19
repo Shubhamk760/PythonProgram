@@ -1,0 +1,17 @@
+
+b = "bcu chuic ijcij"
+
+
+v = b.lower()
+a = v.replace(" ", "")
+
+
+c = list(a)
+
+unique_chars = sorted(set(c))
+
+
+for ch in unique_chars:
+    count = c.count(ch)
+    if count > 1:
+        print(ch,end=" ")

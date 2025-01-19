@@ -1,0 +1,13 @@
+# Input string
+a = input("Enter a string: ")
+
+# Split the string into words
+res = a.split()
+
+# Reverse the order of words
+result = " ".join(reversed(res))
+print(result)
+
+# Reverse each word individually
+result2 = " ".join(word[::-1] for word in res)
+print(result2)

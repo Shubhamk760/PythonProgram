@@ -1,0 +1,23 @@
+add = lambda x, y: x + y
+
+# Calling the lambda function
+result = add(5, 10)
+
+# Lambda function with map to square each number in the list
+numbers = [1, 2, 3, 4, 5]
+squared_numbers = list(map(lambda x: x ** 2, numbers))
+
+print(f"Squared Numbers: {squared_numbers}")
+
+
+# Lambda function to filter even numbers from the list
+numbers = [1, 2, 3, 4, 5, 6, 7, 8]
+even_numbers = list(filter(lambda x: x % 2 == 0, numbers))
+
+print(f"Even Numbers: {even_numbers}")
+
+# Lambda function to sort a list of tuples by the second element
+items = [(1, 'apple'), (3, 'banana'), (2, 'cherry')]
+sorted_items = sorted(items, key=lambda x: x[1])
+
+print(f"Sorted Items: {sorted_items}")

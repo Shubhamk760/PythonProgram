@@ -1,0 +1,6 @@
+a = [2, 34, 34,2,-50,4,4]
+# a = [2, 34, 34, 56, 47, 47]
+for i in range(len(a)):
+    for j in range(i + 1, len(a)):
+        if a[i] == a[j]:
+            print(a[i],end=" ")

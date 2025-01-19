@@ -1,0 +1,21 @@
+# Input string
+b = "shubhajhm "
+
+v = b.lower().replace(" ", "")
+
+unique_chars = sorted(set(v))
+
+# Count occurrences of each unique character
+for ch in unique_chars:
+    count = v.count(ch)
+    print(f"{ch} is present  : {count}  times")
+
+#***************************************************
+
+# Count occurrences of each unique character
+for ch in unique_chars:
+    count=0
+    for i in v:
+        if ch==i:
+            count +=1
+    print(f"{ch} is present  : {count}  times")

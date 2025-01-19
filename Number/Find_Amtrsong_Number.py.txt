@@ -1,0 +1,17 @@
+def is_armstrong_number(n):
+    arm = 0
+    d = n
+    
+    while n > 0:
+        a = n % 10
+        n = n // 10
+        arm = arm + a * a * a
+    
+    if arm == d:
+        print("Armstrong Number")
+    else:
+        print("Not Armstrong Number")
+
+# Taking input from the user
+n = int(input("Enter number: "))
+is_armstrong_number(n)

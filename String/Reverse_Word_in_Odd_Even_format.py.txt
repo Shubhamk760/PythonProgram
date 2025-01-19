@@ -1,0 +1,23 @@
+# Input string
+a = input("Enter your sentence: ")
+
+# Split the string into words
+res = a.split()
+
+# Initialize the output string
+output = ""
+result = ""
+
+# Loop through each word
+for i in range(len(res)):
+    if i % 2 == 0:
+        # Keep the word as it is for even index positions
+        output += res[i] + " "
+    else:
+        # Reverse the word for odd index positions
+        result = res[i][::-1]
+        output += result + " "
+
+# Print the output
+print(output)
+

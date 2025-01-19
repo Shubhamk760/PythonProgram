@@ -1,0 +1,39 @@
+# Creating a dictionary (similar to HashMap in Java)
+map = {}
+
+# Adding elements
+map[1] = "Sam"
+map[2] = "kam"
+map[3] = "eam"
+map[4] = "pam"
+
+# Print the map
+print(map)
+
+# Removing an element
+map.pop(1)
+
+# Print the map after removal
+print(map)
+
+# Accessing an element
+print(map.get(3))
+
+# Get all keys and values
+print(map.keys())
+print(map.values())
+
+# Accessing all key-value pairs
+for key, value in map.items():
+    print(f"{key}    {value}")
+
+# Clear the map
+map.clear()
+print(map)
+
+
+# Sorted Dict
+print(list(sorted(dict)))
+
+for i in sorted(dict.key()):
+       print(i)

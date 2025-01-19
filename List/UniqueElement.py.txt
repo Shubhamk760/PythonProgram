@@ -1,0 +1,38 @@
+a = [2, 34, 34,2,-50,4,4]
+duplipate=[]
+non_duplipate=[]
+
+for i in a:
+    if i not in non_duplipate:
+        non_duplipate.append(i)
+    else:
+        duplipate.append(i)
+    
+        
+print(duplipate)
+print(non_duplipate)
+
+#*************************************************************************
+
+
+a = [2, 34, 34,2,-50,4,4]
+duplipate=[]
+non_duplipate=[]
+
+for i in set(a):
+    count=0
+    for k in a:
+        if i==k:
+            count += 1
+    if (count>1):
+        print(i)
+
+#************************************************
+a = [2, 34, 34]
+for i in range(len(a)):
+    for j in range(i + 1, len(a)):
+        if a[i] == a[j]:
+            a[j] = -1
+            
+    if a[i] != -1:
+        print(" ", a[i], " ", end="")

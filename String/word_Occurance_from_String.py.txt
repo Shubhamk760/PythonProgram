@@ -1,0 +1,35 @@
+
+b= "Tom is a good boy.Tom has good"
+d = {}
+for i in b.split():
+    d[i]=b.count(i)
+
+print(d)
+
+#Second method:
+for i in b.split():
+    if i in d:
+        d[i] +=1
+    else:
+        d[i] =1
+
+print(d)   
+
+#*****************************************************************
+# Input string
+b = input("Enter a string: ")
+
+# Convert the string to lowercase and split it into words
+str_list = b.lower().split()
+
+# Create a set to store unique words
+unique_words = set(str_list)
+
+# Count occurrences of each unique word
+for word in unique_words:
+    count = str_list.count(word)
+    print(f"{word} : {count}")
+
+#************************************************************
+
+   

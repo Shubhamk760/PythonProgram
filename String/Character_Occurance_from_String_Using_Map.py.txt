@@ -1,0 +1,18 @@
+def character_count(input_string):
+    char_count_map = {}
+    
+    for c in input_string:
+        if c in char_count_map:
+          
+            char_count_map[c] += 1
+        else:
+           
+            char_count_map[c] = 1
+
+    # Printing the character count map
+    for key, value in char_count_map.items():
+        print(f"{key} is present: {value} times")
+
+# Driver code
+str = "Ajittttuuiiia"
+character_count(str)
